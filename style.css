@@ -1,0 +1,268 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-head{
+    width: 80%;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+    margin: auto;
+    padding: 1rem 0rem;
+}
+ul{
+    display: flex;
+    gap: 3rem;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    color: black;
+    text-decoration: none;
+}
+.main-body{
+    width: 80%;
+    margin: 1rem auto;
+}
+.grand-parent{
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-between;
+}
+.parent{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.parent_mobile_version{
+    width: 30%;
+    height: 100%;
+}
+.p-child1 img{
+    width: 100%;
+    object-fit: cover;
+}
+.p-child2{
+    display: flex;
+    gap: 2rem;
+}
+.p-h2-text{
+    width: 48%;
+    font-size: 2rem;
+}
+.p-p-text{
+    width: 45%;
+}
+button{
+    margin: 1.5rem 0rem;
+    background-color: black;
+    color: white;
+    padding: 1rem 4rem;
+}
+.g-child1{
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+.g-child1 div{
+    padding: 1.5rem 1rem;
+}
+.g-child1 h1{
+    margin-bottom: 1rem;
+    color: white;
+}
+.g-child1 h4,p{
+    margin-top: 0.5rem;
+}
+.cards{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: 3rem auto;
+}
+.card{
+    display: flex;
+    width: 33%;
+}
+.card-img{
+    width: 25%;
+}
+.card-img img{
+    width: 85%;
+}
+.card-text{
+    text-align: start;
+}
+.mobile_version{
+    display: none;
+} 
+.desktop_version{
+    display: flex;
+}
+@media (max-width:800px){
+
+    .grand-parent{
+        flex-direction: column;
+    } 
+    .parent{
+        width: 100%;
+    }
+    .p-child1{
+        width: 100%;
+    }
+    .p-h2-text{
+        width: 100%;
+    }
+    .p-p-text{
+        width: 100%;
+    }
+    .g-child1{
+        width: 40%;
+    }
+    .cards{
+        margin-top: 4rem;
+    }
+    .card-img{
+        width: 80%;
+    }
+    .card-img img{
+        width: 90%;
+    }
+    .mobile_version{
+        display: flex;
+        width: 45%;
+        flex-direction: column;
+    }
+    .desktop_version{
+        display: none !important;
+    }
+
+    .parent_mobile_version{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+@media (max-width:700px){
+    nav{
+        flex-direction: column;
+    }
+    ul{
+        gap: 2rem;
+        margin: 1.5rem 0rem;
+    }
+}
+@media (min-width:689px) and (max-width:1000px){
+    .cards{
+        margin-top: 4rem;
+        justify-content: center;
+    }
+    .card{
+        width: 50%;
+    }
+    .card-img{
+        width: 50%;
+        height: 80%;
+    }
+    .card-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card-text{
+        padding: 0rem 1rem;
+    }
+    .card_3{
+        margin: 1rem 0rem;
+    }
+}
+@media (max-width:688px){
+    /*
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .menu_list{
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        gap: 2rem;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        justify-content: center;
+        height: 50vh;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav li{
+        margin: 1rem 0rem;
+    }
+    .menu_list.active{
+        left: 0;
+    } 
+     */
+    ul{
+        display: none;
+    }
+    .parent_mobile_version{
+        flex-direction: column;
+    }
+    .mobile_version{
+        width: 100%;
+    }
+    .g-child1{
+        width: 100%;
+    }
+    .cards{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 100%;
+    }
+    .card-img{
+        width: 35%;
+    }
+    .card-img img{
+        width: 100%;
+    }
+    .card-text{
+        padding: 2rem 2rem;
+    }
+}
+@media (min-width:320px) and (max-width:399px){  
+    .main-head{
+        width: 80%;
+        margin: 0 auto;
+    }
+    nav ul{
+        display: none;
+    }
+    .cards{
+        width: 80%;
+        margin: auto;
+    }
+    .card{
+        width: 100%;
+    }
+    .card-img{
+        width: 100%;
+        justify-content: center;
+    }
+}
